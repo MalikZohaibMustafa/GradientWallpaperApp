@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:fontFamily="@font/poppins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Welcome to Solid Wallpaper"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_marginStart="20dp"
+        android:gravity="center|left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bestpark" />
+
+    <TextView
+        android:id="@+id/bestpark"
+        android:fontFamily="@font/poppins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The best gradient wallpaper app free for all people in the world."
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_marginStart="20dp"
+        android:gravity="center|left"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/proceedBtn"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/proceedBtn"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/poppins_bold"
+        android:background="@drawable/btnbackground"
+        android:text="Proceed"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
